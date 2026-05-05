@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Eternity Roleplay, serveur GTA RP FiveM semi-serieux en developpement. Rejoignez Los Santos, candidatez, decouvrez les metiers, le reglement et la boutique."
+    />
+    <title>Eternity Roleplay - GTA RP FiveM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+        <img src="assets/Eternity.png" alt="Logo Eternity Roleplay" />
+        <span>Eternity</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#reglement">Reglement</a>
+        <a href="#candidature">Candidature</a>
+        <a href="#metiers">Entreprises</a>
+        <a href="#legal-illegal">Legal / Illegal</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#actus">Actualites</a>
+        <a href="#espace-staff">Espace Staff</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="header-cta" href="https://discord.gg/yWn6thdVCf" target="_blank" rel="noreferrer">
+        Discord
+      </a>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">GTA RP FiveM - Free access - Semi-serieux</p>
+          <h1>Eternity Roleplay</h1>
+          <p class="hero-copy">
+            Los Santos a ete reconstruite, mais la verite est encore enfouie sous les ruines.
+            Rejoins une ville premium, communautaire, ouverte, et construis ton histoire.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://discord.gg/yWn6thdVCf" target="_blank" rel="noreferrer">
+              Rejoindre Discord
+            </a>
+            <a class="btn secondary" href="#candidature">Candidater</a>
+            <a class="btn ghost" href="#" data-connect>Connexion FiveM</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Statut du serveur">
+          <img src="assets/Eternity.png" alt="Eternity Roleplay" />
+          <div>
+            <span class="status-dot"></span>
+            <p>Serveur en developpement</p>
+            <strong data-player-count>0 / 128 joueurs</strong>
+          </div>
+          <div class="panel-grid">
+            <span>Acces</span>
+            <strong>Free access</strong>
+            <span>Ville</span>
+            <strong>Los Santos</strong>
+            <span>RP</span>
+            <strong>Semi-serieux</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro-section">
+        <div class="section-heading">
+          <p class="eyebrow">Pourquoi venir</p>
+          <h2>Une ville claire, belle, et faite pour jouer serieusement sans perdre le plaisir.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>RP accessible</h3>
+            <p>Free access, accueil communautaire, cadre clair et progression naturelle pour les nouveaux joueurs.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Ville vivante</h3>
+            <p>Services publics, entreprises, gangs, cartels, familles et organisations avec des roles distincts.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Mystere central</h3>
+            <p>Un lore autour du seisme, du blackout et d'un secret gouvernemental a enqueter en jeu.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="lore" class="section lore-section">
+        <div class="lore-card">
+          <div class="section-heading">
+            <p class="eyebrow">Lore officiel</p>
+            <h2>Il y a deux ans, Los Santos s'est brisee.</h2>
+          </div>
+          <div class="lore-text">
+            <p>
+              Une alerte gouvernementale a annonce un possible tremblement violent. Personne n'y a cru.
+              Puis un second message est tombe : tremblement dans 5 minutes.
+            </p>
+            <p>
+              Le sol s'est ouvert, les communications ont disparu, des quartiers entiers se sont effondres
+              et la plus grande tour de la ville s'est brisee en deux. Blackout total.
+            </p>
+            <p>
+              Deux mois plus tot, la ville a ete reconstruite. En surface, tout semble normal.
+              Mais l'economie est a genoux, les tensions montent, les detenus de Bolingbroke se sont evades,
+              et les organisations illegales gagnent du terrain.
+            </p>
+            <p>
+              Pourquoi le gouvernement savait-il ? Explorez, enquetez, recueillez des preuves,
+              reconstituez la verite et revelez le secret au monde entier.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reglement" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Cadre RP</p>
+          <h2>Reglement rapide</h2>
+          <p>Version courte pour le site. La version complete peut etre ajoutee depuis le panel admin.</p>
+        </div>
+        <div class="rules-grid">
+          <article>
+            <h3>Respect</h3>
+            <p>Respect staff, joueurs et scenes RP. Les conflits HRP se reglent calmement via ticket Discord.</p>
+          </article>
+          <article>
+            <h3>Fair-play</h3>
+            <p>Pas de powergaming, metagaming, free-kill, revenge-kill, streamhack ou comportement toxique.</p>
+          </article>
+          <article>
+            <h3>Scene RP</h3>
+            <p>Une scene commencee doit etre jouee jusqu'au bout. Les deconnexions volontaires sont sanctionnees.</p>
+          </article>
+          <article>
+            <h3>Illegal encadre</h3>
+            <p>Chaque groupe illegal a son domaine : drogues, blanchiment, armes ou ventes speciales.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="candidature" class="section split-section">
+        <div>
+          <p class="eyebrow">Recrutement</p>
+          <h2>Candidatures et demandes</h2>
+          <p>
+            Le serveur est free access, mais les postes importants demandent une vraie presentation.
+            Choisis le type de demande, remplis le formulaire, puis copie le resume dans un ticket Discord.
+          </p>
+          <div class="quick-links">
+            <a href="https://discord.gg/yWn6thdVCf" target="_blank" rel="noreferrer">Ouvrir un ticket</a>
+            <a href="#metiers">Voir les metiers</a>
+            <a href="#legal-illegal">Voir les groupes</a>
+          </div>
+        </div>
+
+        <form class="form-card recruitment-card" data-staff-form>
+          <h3>Candidature staff</h3>
+          <p>
+            Reprend le formulaire staff Eternity directement sur le site. Une fois envoye, viens prevenir
+            l'equipe sur Discord pour que les gerants staff consultent ta candidature.
+          </p>
+          <p class="required-note">Toutes les questions sont obligatoires.</p>
+          <div class="staff-form-description">
+            <strong>Description</strong>
+            <p>
+              Vous êtes passionné par le Roleplay et souhaitez contribuer au succès de Eternity? 💼
+              Nous recherchons des personnes motivées, sérieuses et à l'écoute pour renforcer notre équipe.
+              En tant que membre du staff, vous serez au cœur de l'action pour :
+            </p>
+            <ul>
+              <li>Assurer une bonne ambiance et le respect des règles.</li>
+              <li>Aider les joueurs en RP et en HRP.</li>
+              <li>Participer à l'évolution et à l'amélioration du serveur.</li>
+            </ul>
+            <p><strong>👮 Postes disponibles :</strong> Modérateurs, Helpers, Développeurs, Administrateurs.</p>
+            <p>
+              <strong>💬 Qualités recherchées :</strong> Maturité et sens des responsabilités, bonne connaissance
+              des règles RP et HRP, capacité à gérer les conflits de manière calme et impartiale, disponibilité
+              et esprit d’équipe.
+            </p>
+          </div>
+          <div class="staff-fields" data-staff-fields></div>
+          <button class="btn primary" type="submit">Envoyer la candidature</button>
+          <a class="btn primary" href="https://discord.gg/yWn6thdVCf" target="_blank" rel="noreferrer">
+            Aller sur Discord
+          </a>
+          <p class="small-note">
+            Pour l'instant, les reponses sont gardees dans le navigateur. La prochaine etape sera de les envoyer
+            dans un vrai espace gerant staff.
+          </p>
+          <output class="form-output" data-staff-output></output>
+        </form>
+      </section>
+
+      <section id="metiers" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Vie legale</p>
+          <h2>Metiers, services publics et entreprises</h2>
+          <p>Liste actualisable chaque semaine selon les responsables et les recrutements ouverts.</p>
+        </div>
+        <div class="jobs-layout">
+          <div class="jobs-column">
+            <h3>Services publics</h3>
+            <ul class="tag-list">
+              <li>Gouverneur</li>
+              <li>Avocat</li>
+              <li>L.S.P.D</li>
+              <li>EMS</li>
+              <li>B.C.S.O</li>
+            </ul>
+          </div>
+          <div class="jobs-column">
+            <h3>Entreprises</h3>
+            <ul class="tag-list">
+              <li>Bahama Mamas</li>
+              <li>Vanilla Unicorn</li>
+              <li>Los Santos Custom</li>
+              <li>Benny's</li>
+              <li>Concessionnaire</li>
+              <li>Burger Shot</li>
+              <li>Dynasty8</li>
+              <li>Tequi-La-La</li>
+              <li>Weazel News</li>
+              <li>Vigneron</li>
+              <li>Taxi</li>
+            </ul>
+          </div>
+          <div class="jobs-column highlight">
+            <h3>Creer son entreprise</h3>
+            <p>
+              Etre patron, ce n'est pas seulement gagner de l'argent. Il faut gerer son entreprise,
+              ses employes, son RP et son activite.
+            </p>
+            <ul>
+              <li>Avoir au minimum 16 ans.</li>
+              <li>Etre regulierement present.</li>
+              <li>Ne pas etre actif sur plusieurs serveurs en meme temps.</li>
+              <li>Fournir un Google Doc clair : projet, Discord, infos entreprise et infos personnelles.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="legal-illegal" class="section illegal-section">
+        <div class="section-heading">
+          <p class="eyebrow">Equilibre RP</p>
+          <h2>Legal / Illegal</h2>
+          <p>
+            Chaque camp a son role, ses limites et ses opportunites. Le but est de creer des scenes propres,
+            utiles et coherentes pour toute la ville.
+          </p>
+        </div>
+        <div class="legal-illegal-layout">
+          <article class="side-panel legal-panel">
+            <span>Legal</span>
+            <h3>Institutions et economie</h3>
+            <p>
+              Le legal fait tourner Los Santos : justice, securite, sante, entreprises, medias,
+              immobilier et services de proximite.
+            </p>
+            <ul>
+              <li>Services publics : Gouverneur, Avocat, LSPD, EMS, BCSO.</li>
+              <li>Entreprises : restauration, mecanique, immobilier, medias, taxi, vigneron.</li>
+              <li>Objectif : creer de l'emploi, des scenes et une economie stable.</li>
+              <li>Recrutement et creation d'entreprise via Discord.</li>
+            </ul>
+          </article>
+
+          <article class="side-panel illegal-panel">
+            <span>Illegal</span>
+            <h3>Ombre de Los Santos</h3>
+            <p>
+              L'illegal est encadre pour garder un RP lisible : chaque type de groupe a son domaine
+              et ne marche pas sur les autres.
+            </p>
+            <ul>
+              <li>Gangs : drogue et activites de rue.</li>
+              <li>Cartels : blanchiment et reseaux lourds.</li>
+              <li>Organisations : ventes d'armes.</li>
+              <li>Familles : certaines armes et affaires sensibles.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="faction-grid expanded-factions">
+          <article>
+            <span>Gangs</span>
+            <h3>Drogue</h3>
+            <p>Les gangs gerent les points de rue, la production, les conflits de quartier et les ventes locales.</p>
+            <strong>Priorite RP : territoire, reputation, tensions de rue.</strong>
+          </article>
+          <article>
+            <span>Cartels</span>
+            <h3>Blanchiment</h3>
+            <p>Les cartels controlent les circuits d'argent sale et les negociations a plus grande echelle.</p>
+            <strong>Priorite RP : reseau, discretion, influence.</strong>
+          </article>
+          <article>
+            <span>Organisations</span>
+            <h3>Ventes d'armes</h3>
+            <p>Les organisations gerent les ventes d'armes et les contrats sensibles entre groupes.</p>
+            <strong>Priorite RP : contacts, risque, negociation.</strong>
+          </article>
+          <article>
+            <span>Familles</span>
+            <h3>Armes speciales</h3>
+            <p>Les familles peuvent vendre certaines armes et mener des affaires plus fermees.</p>
+            <strong>Priorite RP : loyautes, secrets, traditions.</strong>
+          </article>
+        </div>
+
+        <div class="rp-rules">
+          <h3>Regles de coherence</h3>
+          <div class="rp-rules-grid">
+            <article>
+              <h4>Pas de melange abusif</h4>
+              <p>Un groupe ne prend pas le business d'un autre sans validation ou scene RP solide.</p>
+            </article>
+            <article>
+              <h4>Escalade logique</h4>
+              <p>Les conflits montent progressivement : discussion, menace, pression, puis action.</p>
+            </article>
+            <article>
+              <h4>Preuves et enquete</h4>
+              <p>La police doit construire ses dossiers avec preuves, temoignages et scenes coherentes.</p>
+            </article>
+            <article>
+              <h4>Respect du lore</h4>
+              <p>Le chaos de Los Santos vient du seisme, des evades et du silence du gouvernement.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="boutique" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Boutique</p>
+          <h2>Packs et avantages</h2>
+          <p>Les achats doivent rester propres, lisibles et compatibles avec l'equilibre RP.</p>
+        </div>
+        <div class="shop-grid">
+          <article class="shop-card">
+            <h3>VIP</h3>
+            <p>Avantages de confort, priorite file d'attente, cosmetiques et bonus non destructeurs.</p>
+            <strong>A configurer</strong>
+            <button class="btn secondary" data-shop="VIP">Demander</button>
+          </article>
+          <article class="shop-card">
+            <h3>Vehicules</h3>
+            <p>Vehicules exclusifs, packs concessionnaire ou modeles premium selon regles serveur.</p>
+            <strong>A configurer</strong>
+            <button class="btn secondary" data-shop="Vehicules">Demander</button>
+          </article>
+          <article class="shop-card">
+            <h3>Coins</h3>
+            <p>Monnaie boutique pour acheter des packs sans casser l'economie de Los Santos.</p>
+            <strong>A configurer</strong>
+            <button class="btn secondary" data-shop="Coins">Demander</button>
+          </article>
+          <article class="shop-card">
+            <h3>Packs</h3>
+            <p>Packs demarrage, entreprise, immobilier, roleplay ou evenements saisonniers.</p>
+            <strong>A configurer</strong>
+            <button class="btn secondary" data-shop="Packs">Demander</button>
+          </article>
+          <article class="shop-card">
+            <h3>Proprietes</h3>
+            <p>Maisons, appartements, locaux pro et biens RP avec validation equipe.</p>
+            <strong>A configurer</strong>
+            <button class="btn secondary" data-shop="Proprietes">Demander</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="actus" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Actualites</p>
+          <h2>Dernieres nouvelles</h2>
+        </div>
+        <div class="news-grid" data-news-list></div>
+      </section>
+
+      <section id="staff" class="section staff-section">
+        <div class="section-heading">
+          <p class="eyebrow">Equipe</p>
+          <h2>Staff Eternity</h2>
+          <p>Ajoute les fondateurs, responsables et moderateurs quand les roles sont confirmes.</p>
+        </div>
+        <div class="staff-grid">
+          <article>
+            <span>Fondateur</span>
+            <h3>A definir</h3>
+            <p>Direction projet, vision serveur, decisions majeures.</p>
+          </article>
+          <article>
+            <span>Responsable RP</span>
+            <h3>A definir</h3>
+            <p>Coherence des scenes, validation groupes, accompagnement joueurs.</p>
+          </article>
+          <article>
+            <span>Moderation</span>
+            <h3>Recrutement ouvert</h3>
+            <p>Tickets, sanctions, aide communaute et suivi Discord.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="nous-rejoindre" class="section join-section">
+        <div>
+          <p class="eyebrow">Nous rejoindre</p>
+          <h2>Entre dans Eternity</h2>
+          <p>
+            Rejoins le Discord, suis le TikTok, prepare ton personnage et connecte-toi quand le serveur ouvre.
+          </p>
+        </div>
+        <div class="join-actions">
+          <a class="btn primary" href="https://discord.gg/yWn6thdVCf" target="_blank" rel="noreferrer">Discord</a>
+          <a class="btn secondary" href="https://www.tiktok.com/@eternityfa" target="_blank" rel="noreferrer">TikTok</a>
+          <a class="btn ghost" href="#" data-connect>FiveM</a>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq-section">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions frequentes</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Le serveur est-il whitelist ?</summary>
+            <p>Non. Eternity est en free access, avec des candidatures pour les roles importants.</p>
+          </details>
+          <details>
+            <summary>Le serveur est-il ouvert ?</summary>
+            <p>Il est actuellement en developpement. Le Discord donnera les dates de tests et d'ouverture.</p>
+          </details>
+          <details>
+            <summary>Comment rejoindre un metier ?</summary>
+            <p>Il faut passer par Discord, ticket ou candidature selon le poste demande.</p>
+          </details>
+          <details>
+            <summary>Comment ouvrir une entreprise ?</summary>
+            <p>Il faut avoir 16 ans minimum, etre present, et fournir un Google Doc clair et construit.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="espace-staff" class="section admin-section">
+        <div class="section-heading">
+          <p class="eyebrow">Espace Staff</p>
+          <h2>Gestion Eternity</h2>
+          <p>Connecte-toi avec le code staff pour voir les candidatures et gerer les actualites locales.</p>
+        </div>
+        <div class="staff-admin" data-staff-admin>
+          <form class="admin-login" data-staff-login>
+            <label>
+              Code staff
+              <input name="code" type="password" placeholder="Code d'acces" required />
+            </label>
+            <button class="btn primary" type="submit">Ouvrir l'espace staff</button>
+            <p class="small-note">Code de test actuel : <strong>ETERNITYSTAFF</strong>. Il sera remplace par Discord plus tard.</p>
+          </form>
+
+          <div class="staff-dashboard" data-staff-dashboard hidden>
+            <div class="dashboard-toolbar">
+              <input data-application-search type="search" placeholder="Rechercher une candidature..." />
+              <button class="btn secondary" type="button" data-toggle-archive>Voir la corbeille</button>
+              <button class="btn secondary" type="button" data-export-applications>Exporter</button>
+              <button class="btn ghost" type="button" data-clear-applications>Effacer les candidatures</button>
+            </div>
+            <p class="small-note" data-archive-status>Candidatures actives.</p>
+            <div class="dashboard-grid">
+              <div class="applications-list" data-applications-list></div>
+              <article class="application-detail" data-application-detail>
+                <h3>Aucune candidature selectionnee</h3>
+                <p>Choisis une candidature dans la liste pour voir toutes les reponses.</p>
+              </article>
+            </div>
+
+            <section class="permissions-panel">
+              <div>
+                <p class="eyebrow">Roles Discord prevus</p>
+                <h3>Permissions staff</h3>
+                <p>
+                  Cette base servira quand on branchera la connexion Discord. Chaque role verra seulement
+                  les fonctions autorisees.
+                </p>
+              </div>
+              <div class="permissions-grid">
+                <article>
+                  <span>Gestion complete</span>
+                  <h4>Gerant illegal, Gerant legal, Responsable event</h4>
+                  <ul>
+                    <li>Voir les candidatures</li>
+                    <li>Archiver et restaurer les candidatures</li>
+                    <li>Publier des annonces</li>
+                    <li>Gerer les modules legal, illegal et event</li>
+                  </ul>
+                </article>
+                <article>
+                  <span>Communication</span>
+                  <h4>Responsable Communication</h4>
+                  <ul>
+                    <li>Publier des annonces</li>
+                    <li>Ajouter des liens TikTok / videos</li>
+                    <li>Mettre en avant les reseaux</li>
+                    <li>Voir les contenus publies</li>
+                  </ul>
+                </article>
+                <article>
+                  <span>Lecture staff</span>
+                  <h4>Super-Admin, Administrateur, Super-Modo, Moderateur, Helper, Support discord, Team Staff</h4>
+                  <ul>
+                    <li>Voir les candidatures</li>
+                    <li>Consulter les details</li>
+                    <li>Pas de suppression</li>
+                    <li>Pas de publication sur le site</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <form class="admin-panel" data-admin-form>
+              <h3>Actualites</h3>
+              <label>
+                Titre de l'actualite
+                <input name="title" type="text" placeholder="Ex: Recrutement LSPD ouvert" required />
+              </label>
+              <label>
+                Message
+                <textarea name="body" rows="4" placeholder="Ecris l'annonce ici..." required></textarea>
+              </label>
+              <button class="btn primary" type="submit">Ajouter l'actualite</button>
+              <button class="btn ghost" type="button" data-reset-news>Reinitialiser</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/Eternity.png" alt="" />
+        <p>Eternity Roleplay - GTA RP FiveM semi-serieux - Los Santos.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://discord.gg/yWn6thdVCf" target="_blank" rel="noreferrer">Discord</a>
+        <a href="https://www.tiktok.com/@eternityfa" target="_blank" rel="noreferrer">TikTok</a>
+        <a href="#reglement">Reglement</a>
+      </div>
+    </footer>
+
+    <aside class="help-chat" data-help-chat>
+      <button class="help-toggle" type="button" data-help-toggle aria-label="Ouvrir l'aide">
+        ?
+      </button>
+      <div class="help-panel" data-help-panel hidden>
+        <div class="help-header">
+          <div>
+            <strong>Assistance Eternity</strong>
+            <span>Reponse rapide</span>
+          </div>
+          <button type="button" data-help-close aria-label="Fermer l'aide">×</button>
+        </div>
+        <div class="help-messages" data-help-messages>
+          <p class="bot-message">Salut, je peux t'aider a trouver les infos importantes du serveur.</p>
+        </div>
+        <div class="help-actions">
+          <button type="button" data-help-question="discord">Discord</button>
+          <button type="button" data-help-question="staff">Candidature staff</button>
+          <button type="button" data-help-question="boutique">Boutique</button>
+          <button type="button" data-help-question="metiers">Metiers</button>
+          <button type="button" data-help-question="reglement">Reglement</button>
+          <button type="button" data-help-question="fivem">FiveM</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
