@@ -79,10 +79,17 @@ textarea {
   min-width: max-content;
 }
 
-.brand img {
+.logo-mark {
+  display: grid;
+  place-items: center;
   width: 42px;
   height: 42px;
-  object-fit: contain;
+  border: 1px solid rgba(85, 215, 238, 0.55);
+  border-radius: 50%;
+  color: #041016;
+  background: linear-gradient(135deg, var(--cyan), #9ae8f5);
+  box-shadow: 0 0 22px rgba(85, 215, 238, 0.25);
+  font-weight: 900;
 }
 
 .site-nav {
@@ -175,7 +182,8 @@ textarea {
   z-index: -1;
   background:
     linear-gradient(90deg, rgba(5, 7, 10, 0.95) 0%, rgba(5, 7, 10, 0.68) 48%, rgba(5, 7, 10, 0.92) 100%),
-    url("assets/Eternity.png") right 9% center / min(42vw, 520px) no-repeat,
+    radial-gradient(circle at 78% 46%, rgba(85, 215, 238, 0.22), transparent 18rem),
+    radial-gradient(circle at 86% 30%, rgba(216, 182, 107, 0.16), transparent 16rem),
     linear-gradient(135deg, #06131c 0%, #0b2230 48%, #05070a 100%);
 }
 
@@ -250,7 +258,6 @@ h3 {
 .feature-grid article,
 .rules-grid article,
 .faction-grid article,
-.admin-panel,
 .faq-list details,
 .news-card {
   border: 1px solid var(--line);
@@ -264,9 +271,21 @@ h3 {
   backdrop-filter: blur(20px);
 }
 
-.hero-panel > img {
+.panel-logo {
+  display: grid;
+  place-items: center;
   width: 122px;
+  height: 122px;
   margin-bottom: 18px;
+  border: 1px solid rgba(85, 215, 238, 0.55);
+  border-radius: 50%;
+  color: #041016;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 45%),
+    linear-gradient(135deg, #55d7ee, #0c6f9f);
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .status-dot {
@@ -369,7 +388,7 @@ h3 {
   padding: clamp(28px, 5vw, 56px);
   background:
     linear-gradient(90deg, rgba(13, 20, 29, 0.96), rgba(13, 20, 29, 0.72)),
-    url("assets/Eternity.png") right 42px center / 260px no-repeat;
+    radial-gradient(circle at 88% 46%, rgba(85, 215, 238, 0.18), transparent 15rem);
 }
 
 .lore-text {
@@ -396,8 +415,7 @@ h3 {
   font-weight: 800;
 }
 
-.form-card,
-.admin-panel {
+.form-card {
   display: grid;
   gap: 16px;
   padding: 24px;
@@ -710,173 +728,6 @@ textarea:focus {
   font-weight: 800;
 }
 
-.admin-section {
-  padding-top: 40px;
-}
-
-.admin-panel,
-.admin-login {
-  max-width: 760px;
-}
-
-.staff-admin {
-  display: grid;
-  gap: 24px;
-}
-
-.admin-login {
-  display: grid;
-  gap: 16px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(13, 20, 29, 0.78);
-}
-
-.staff-dashboard {
-  display: grid;
-  gap: 22px;
-}
-
-.dashboard-toolbar {
-  display: grid;
-  grid-template-columns: minmax(220px, 1fr) auto auto auto;
-  gap: 12px;
-  align-items: center;
-}
-
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.25fr);
-  gap: 18px;
-}
-
-.applications-list,
-.application-detail {
-  min-height: 320px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(13, 20, 29, 0.78);
-}
-
-.applications-list {
-  display: grid;
-  align-content: start;
-  overflow: hidden;
-}
-
-.application-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 42px;
-  border-bottom: 1px solid var(--line);
-}
-
-.application-item {
-  display: grid;
-  gap: 4px;
-  padding: 15px;
-  border: 0;
-  color: var(--text);
-  text-align: left;
-  background: transparent;
-  cursor: pointer;
-}
-
-.application-item:hover,
-.application-item.is-active {
-  background: rgba(85, 215, 238, 0.09);
-}
-
-.application-item span {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.application-archive {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  min-height: 100%;
-  border: 0;
-  border-left: 1px solid var(--line);
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.02);
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 800;
-}
-
-.application-archive:hover {
-  color: #041016;
-  background: var(--gold);
-}
-
-.application-detail {
-  padding: 22px;
-}
-
-.answer-list {
-  display: grid;
-  gap: 14px;
-}
-
-.answer-list dt {
-  color: var(--cyan);
-  font-weight: 800;
-}
-
-.answer-list dd {
-  margin: 6px 0 0;
-  color: #d5e5eb;
-  line-height: 1.65;
-  white-space: pre-wrap;
-}
-
-.permissions-panel {
-  display: grid;
-  gap: 18px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(13, 20, 29, 0.78);
-}
-
-.permissions-panel p {
-  color: var(--muted);
-  line-height: 1.65;
-}
-
-.permissions-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.permissions-grid article {
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.permissions-grid span {
-  color: var(--gold);
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.permissions-grid h4 {
-  margin: 8px 0 12px;
-}
-
-.permissions-grid ul {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--muted);
-  line-height: 1.75;
-}
-
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -886,9 +737,16 @@ textarea:focus {
   color: var(--muted);
 }
 
-.site-footer img {
+.footer-logo {
+  display: grid;
+  place-items: center;
   width: 58px;
+  height: 58px;
   margin-bottom: 10px;
+  border-radius: 50%;
+  color: #041016;
+  background: linear-gradient(135deg, var(--cyan), #9ae8f5);
+  font-weight: 900;
 }
 
 .footer-links {
@@ -1103,7 +961,7 @@ textarea:focus {
   .lore-card {
     background:
       linear-gradient(90deg, rgba(13, 20, 29, 0.96), rgba(13, 20, 29, 0.86)),
-      url("assets/Eternity.png") right 22px top 24px / 170px no-repeat;
+      radial-gradient(circle at 88% 30%, rgba(85, 215, 238, 0.16), transparent 12rem);
   }
 
   .join-section,
@@ -1112,9 +970,6 @@ textarea:focus {
     align-items: flex-start;
   }
 
-  .dashboard-toolbar,
-  .dashboard-grid,
-  .permissions-grid,
   .rp-rules-grid {
     grid-template-columns: 1fr;
   }
@@ -1132,7 +987,7 @@ textarea:focus {
   .hero-bg {
     background:
       linear-gradient(180deg, rgba(5, 7, 10, 0.72) 0%, rgba(5, 7, 10, 0.96) 62%),
-      url("assets/Eternity.png") center 78px / 260px no-repeat,
+      radial-gradient(circle at center 130px, rgba(85, 215, 238, 0.24), transparent 11rem),
       linear-gradient(135deg, #06131c 0%, #0b2230 48%, #05070a 100%);
   }
 
